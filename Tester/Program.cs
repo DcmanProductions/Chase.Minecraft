@@ -1,19 +1,16 @@
-﻿using Chase.Minecraft;
-using System.Text.Json;
+﻿/*
+Chase.Minecraft - LFInteractive LLC. (c) 2020-2024
+a minecraft library for handling user authentication, launching game, downloading mods, etc
+https://github.com/dcmanproductions/Chase.Minecraft
+Licensed under the GNU General Public License v3.0
+https://www.gnu.org/licenses/lgpl-3.0.html
+*/
 
-namespace Tester
+namespace Tester;
+
+internal class Program
 {
-    internal class Program
+    private static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            if (MCAuth.Login("drew_cat@live.com", "zRr5x743ySLPnsF", out MCUser user))
-            {
-                Console.WriteLine(JsonSerializer.Serialize(user));
-            }else
-            {
-                Console.WriteLine("INVALID");
-            }
-        }
     }
 }
